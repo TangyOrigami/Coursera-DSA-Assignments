@@ -35,10 +35,14 @@ public class Percolation {
 
 		for (String arg : args) {
 			try {
+				Percolation percolation = Percolation();
+
 				int num = Integer.parseInt(arg);
-				StdOut.println("Received integer argument: "+num);
+
+				percolation.Percolation(num);
+
 			} catch (NumberFormatException e) {
-				System.out.println("Invalid argument: " + arg + ". Please provide integer arguments only.");
+				System.out.println("Invalid argument: " + arg + ". Please provide integer arguments.");
 			}
 
 		}
