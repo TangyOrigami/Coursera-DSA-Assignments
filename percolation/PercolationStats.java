@@ -6,7 +6,6 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 public class PercolationStats {
 
-	private int gridn;
 	private int trials;
 
 	//// perform independent trials on an n-by-n grid
@@ -37,7 +36,6 @@ public class PercolationStats {
 			Percolation percolation = new Percolation(num);
 
 			percolation.open(1,2);
-
 
 		} catch (IllegalArgumentException e) {
 			System.out.println("Arguments n and trials must be > 0");
